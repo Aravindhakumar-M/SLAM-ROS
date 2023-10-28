@@ -18,7 +18,7 @@ This Python script provides a simple teleoperation node for controlling a robot 
 3. Run the script:
 
    ```bash
-   rosrun your_ros_package_name teleop_node.py
+   rosrun <ros_package_name> teleop_node.py
    ```
 
 ## Use the arrow keys on your keyboard to control the robot's motion:
