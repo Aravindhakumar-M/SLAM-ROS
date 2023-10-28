@@ -1,43 +1,50 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import rospy
-from std_msgs.msg import Int16MultiArray
+from geometry_msgs.msg import Twist
 import curses
 
-# Initialize the curses library for capturing keyboard input
+# Initialize the curses library for keyboard input
 screen = curses.initscr()
 curses.noecho()
 curses.cbreak()
 screen.keypad(True)
-direction = Int16MultiArray()
+
+# Create a Twist message to control linear and angular velocities
+twist_msg = Twist()
 
 def teleop_node():
-    # Capture a character from the keyboard
+    # Read keyboard input
     char = screen.getch()
-    if char == curses.KEY_RIGHT:
-        direction = [0, 0, 1, 0]  # Move right
-    elif char == curses.KEY_LEFT:
-        direction = [0, 0, 0, 1]  # Move left
-    elif char == curses.KEY_UP:
-        direction = [1, 0, 0, 0]  # Move forward
-    elif char == curses.KEY_DOWN:
-        direction = [0, 1, 0, 0]  # Move backward
-
-    # Initialize the ROS node and publish the direction as Int16MultiArray
-    pub = rospy.Publisher("/wheel", Int16MultiArray, queue_size=10)
-    rospy.init_node('teleop_node', anonymous=True)
     
-    # End curses input handling to return to normal terminal behavior
+    # Map keyboard input to linear and angular velocities
+    if char == curses.KEY_RIGHT:
+        twist_msg.angular.z = -1.0  # Rotate right
+    elif char == curses.KEY_LEFT:
+        twist_msg.angular.z = 1.0   # Rotate left
+    elif char == curses.KEY_UP:
+        twist_msg.linear.x = 1.0    # Move forward
+    elif char == curses.KEY_DOWN:
+        twist_msg.linear.x = -1.0   # Move backward
+    else:
+        # Stop the robot if no key is pressed
+        twist_msg.linear.x = 0.0
+        twist_msg.angular.z = 0.0
+
+    # Create a publisher to send Twist messages to control the robot
+    pub = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
+    rospy.init_node('teleop_node', anonymous=True)
     curses.nocbreak()
     screen.keypad(0)
     curses.echo()
 
-    # Publish the direction command
-    pub.publish(data=direction)
-    print(direction)
+    # Publish the Twist message to control the robot
+    pub.publish(twist_msg)
+    print(twist_msg)
 
 if __name__ == '__main__':
     try:
         while not rospy.is_shutdown():
+            # Continuously run the teleop_node function to control the robot
             teleop_node()
     except rospy.ROSInterruptException:
         pass
