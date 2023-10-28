@@ -30,3 +30,6 @@ This Python script provides a simple teleoperation node for controlling a robot 
 ## Node Details
 The script uses the curses library to capture keyboard input.
 It initializes the ROS node as "teleop_node" and publishes direction commands as Int16MultiArray to the /wheel topic.
+
+## Acknowledgments
+ROS community for providing a robust framework for robot control.
