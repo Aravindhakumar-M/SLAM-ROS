@@ -27,11 +27,17 @@ Before using this code, make sure you have the following prerequisites installed
 
 ## Functionality
 1. The script listens to laser scan data and odometry data.
+
 2. It calculates the robot's position and orientation in the world coordinate system.
+
 3. The laser scan data is used to determine obstacles and populate the occupancy grid map.
+
 4. The map data is published as a ROS OccupancyGrid message.
+
 5. The robot's path is tracked and published as a series of PoseStamped messages.
+
 6. The map is built with a specified resolution and dimensions.
+
 7. The map's origin is set based on the robot's position.
 
 ## Published Topics
