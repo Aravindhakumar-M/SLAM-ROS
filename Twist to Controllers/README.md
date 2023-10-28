@@ -28,3 +28,6 @@ The script contains the following main components:
 
    ```bash
    rosrun your_package_name cont_pub.py
+   ```
+
+The node will listen for Twist messages on the /cmd_vel topic and control the motors accordingly.
