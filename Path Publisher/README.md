@@ -26,9 +26,9 @@ To run the Path Planner ROS Node, you need to have the following installed:
 ##   ROS Topics
 The Path Planner ROS Node subscribes to the following ROS topics:
 
-`/map (OccupancyGrid):` The map data used for path planning.
-`/initialpose (PoseWithCovarianceStamped):` The initial pose or start position.
-`/goal_point (PoseStamped):` The goal point or position to plan a path to.
+`/map (OccupancyGrid):` The map data used for path planning.  
+`/initialpose (PoseWithCovarianceStamped):` The initial pose or start position.  
+`/goal_point (PoseStamped):` The goal point or position to plan a path to.  
 It also publishes the planned path as a ROS Path message on the topic `/path`.
 
 ## Configuration
