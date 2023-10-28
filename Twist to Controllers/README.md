@@ -27,7 +27,7 @@ The script contains the following main components:
 3. Open a terminal and run the following command to start the ROS node:
 
    ```bash
-   rosrun your_package_name cont_pub.py
+   rosrun <your_package_name> cont_pub.py
    ```
 
 The node will listen for Twist messages on the /cmd_vel topic and control the motors accordingly.
