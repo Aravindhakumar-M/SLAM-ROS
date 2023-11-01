@@ -8,12 +8,16 @@ This Python script is an example of a ROS (Robot Operating System) node that sub
 
 ## How to Use
 
-1. Place the `joint_state_to_odom.py` file in your ROS workspace or package.
+1. Place the `odom_pub.py` file in your ROS workspace or package.
 
 2. Make sure the script is executable by running the following command:
 
    ```shell
-   chmod +x joint_state_to_odom.py
+   chmod +x odom_pub.py
+   ```
+3. Launch your ROS environment and run the script with the following command:
+   ```shell
+   rosrun <package_name> odom_pub.py
    ```
    
 The script will start listening to the joint_states topic and publishing odometry data to the odom topic.
