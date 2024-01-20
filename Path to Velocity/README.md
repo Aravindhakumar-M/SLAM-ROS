@@ -8,17 +8,17 @@ This Python script is designed to control the velocities of a robot's wheels bas
 
 ## How to Use
 
-1. Place the `robot_wheel_controller.py` file in your ROS workspace or package.
+1. Place the `path_to_vel.py` file in your ROS workspace or package.
 
 2. Make the script executable by running the following command:
 
    ```shell
-   chmod +x robot_wheel_controller.py
+   chmod +x path_to_vel.py
    ```
 3. Launch your ROS environment and run the script with the following command:
 
    ```shell
-   rosrun your_package_name robot_wheel_controller.py
+   rosrun your_package_name path_to_vel.py
    ```
 
 The script will subscribe to the /path topic, process the path information, and control the robot's wheel velocities accordingly.
@@ -36,3 +36,7 @@ The script will subscribe to the /path topic, process the path information, and 
 - You can adjust the max_linear_vel and max_angular_vel values to limit the robot's maximum linear and angular velocities.
 
 - Modify the topic names and frame IDs to match your robot's configuration.
+
+# Acknowledgments
+Credit to the creators of ROS and its libraries.   
+Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
