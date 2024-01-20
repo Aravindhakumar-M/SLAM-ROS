@@ -14,11 +14,26 @@ A comprehensive repository based on ROS Noetic, featuring custom-written nodes f
 
 ## Usage:
 1. Navigate into the ros package.
-1. Download the repository: `git clone https://github.com/Aravindhakumar-M/SLAM-ROS.git`
-2. Navigate to the project directory: `cd <workspace name>`
-3. Build the project: `catkin_make`
-4. Source the environment: `source devel/setup.bash`
-5. Execute the desired Python script: `rosrun  script_name.py`
+2. Download the repository:
+```shell
+   git clone https://github.com/Aravindhakumar-M/SLAM-ROS.git
+```
+3. Navigate to the project directory:
+```shell
+   cd <workspace name>
+```
+4. Build the project:
+```shell
+   catkin_make
+```
+5. Source the environment:
+```shell
+    source devel/setup.bash
+```
+6. Execute the desired Python script:
+```shell
+    rosrun  script_name.py
+```
 
 # Acknowledgments
 Credit to the creators of ROS and its libraries.   
