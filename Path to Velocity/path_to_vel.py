@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# Import necessary libraries and modules
 import rospy
 from std_msgs.msg import String, Float64
 import math
@@ -34,27 +33,21 @@ def py_node(msg):
     # Limit the angular velocity to the maximum allowed and ensure it's within the range
     angular_vel = max(min(angular_vel, max_angular_vel), -max_angular_vel)
     
-    # Set the linear and angular velocity as x and y
     x = linear_vel
     y = angular_vel
 
     # Calculate individual wheel velocities
     x1 = (2 * x + 2.2 * y) / 2
     x2 = (2 * x - 2.2 * y) / 2
-    
-    # Send wheel velocities to the command publisher
     cmdvel(x1, x2)
 
 # Function to publish wheel velocities
 def cmdvel(x1, x2):
 
-    # Define publishers for each wheel controller
     pub1 = rospy.Publisher('/cont1/command', Float64, queue_size=10)
     pub2 = rospy.Publisher('/cont2/command', Float64, queue_size=10)
     pub3 = rospy.Publisher('/cont3/command', Float64, queue_size=10)
     pub4 = rospy.Publisher('/cont4/command', Float64, queue_size=10)
-    
-    # Set the publishing rate
     rate = rospy.Rate(10)
 
     # Continuously publish wheel velocities
@@ -67,14 +60,9 @@ def cmdvel(x1, x2):
 
 if __name__ == '__main__':
     try:
-        # Initialize the ROS node
         rospy.init_node('cont_node', anonymous=True)
         print("Started Velocity Publisher node")
-        
-        # Subscribe to the 'path' topic and call 'py_node' when a message is received
         rospy.Subscriber('path', Path, py_node)
-        
-        # Enter the ROS event loop
         rospy.spin()
     except rospy.ROSInterruptException:
         pass
