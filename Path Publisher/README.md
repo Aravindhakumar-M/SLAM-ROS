@@ -6,7 +6,7 @@ The Path Planner ROS Node is a simple Python script that plans a path from a giv
 
 To run the Path Planner ROS Node, you need to have the following installed:
 
-- ROS (Robot Operating System)
+- ROS Noetic
 - Python 3
 - NumPy
 - ROS packages for standard message types (`std_msgs`, `nav_msgs`, `geometry_msgs`, `tf`, etc.)
