@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# Import necessary libraries and modules
 import rospy
 import math
 from sensor_msgs.msg import JointState
