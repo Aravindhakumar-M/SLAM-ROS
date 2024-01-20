@@ -33,3 +33,7 @@ The script will subscribe to the /joint_states topic, process the wheel encoder 
 - You can adjust the wheel parameters such as wheel radius and wheel separation to match your robot's specifications.
 
 - Modify the frame names and topic names as needed to align with your robot's configuration.
+
+# Acknowledgments
+Credit to the creators of ROS and its libraries.   
+Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
