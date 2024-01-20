@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import numpy as np
@@ -79,7 +79,6 @@ class PathPlanner:
 
     def plan_path(self, start_pos, goal_pos, time_stamp):
         # Function to plan a simple path from start to goal
-
         path = []
         curr_pos = Float64MultiArray()
         next_pos = Float64MultiArray()
