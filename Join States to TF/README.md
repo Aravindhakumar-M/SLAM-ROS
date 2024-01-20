@@ -8,16 +8,16 @@ This Python script is designed to calculate and publish transformations based on
 
 ## How to Use
 
-1. Place the `wheel_encoder_to_tf.py` file in your ROS workspace or package.
+1. Place the `tf_broadcaster.py` file in your ROS workspace or package.
 
 2. Make the script executable by running the following command:
 
    ```shell
-   chmod +x wheel_encoder_to_tf.py
+   chmod +x tf_broadcaster.py
    ```
 3. Launch your ROS environment and run the script with the following command:
    ```shell
-   rosrun your_package_name wheel_encoder_to_tf.py
+   rosrun your_package_name tf_broadcaster.py
    ```
 
 The script will subscribe to the /joint_states topic, process the wheel encoder data, and publish transformations between the odom and world_link frames.
