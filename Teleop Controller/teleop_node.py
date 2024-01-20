@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
 import rospy
 from geometry_msgs.msg import Twist
 import curses
@@ -37,14 +38,12 @@ def teleop_node():
     screen.keypad(0)
     curses.echo()
 
-    # Publish the Twist message to control the robot
     pub.publish(twist_msg)
     print(twist_msg)
 
 if __name__ == '__main__':
     try:
         while not rospy.is_shutdown():
-            # Continuously run the teleop_node function to control the robot
             teleop_node()
     except rospy.ROSInterruptException:
         pass
