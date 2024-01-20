@@ -31,3 +31,7 @@ The script contains the following main components:
    ```
 
 The node will listen for Twist messages on the /cmd_vel topic and control the motors accordingly.
+
+# Acknowledgments
+Credit to the creators of ROS and its libraries.   
+Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
