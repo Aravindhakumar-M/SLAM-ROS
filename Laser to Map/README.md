@@ -44,3 +44,7 @@ Before using this code, make sure you have the following prerequisites installed
 `/map` The occupancy grid map is published on this topic as OccupancyGrid messages.
 
 `/path` The robot's path is published on this topic as a series of PoseStamped messages.
+
+# Acknowledgments
+Credit to the creators of ROS and its libraries.   
+Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
