@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import math
@@ -10,10 +10,8 @@ from tf.transformations import euler_from_quaternion
 
 class MapMaker:
     def __init__(self):
-        # Initialize ROS node
         rospy.init_node('map_pub', anonymous=True)
         
-        # Initialize variables and data structures
         self.scan_data = None
         self.odom_data = None
         self.map_resolution = 0.05
