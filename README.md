@@ -32,7 +32,7 @@ A comprehensive repository based on ROS Noetic, featuring custom-written nodes f
 ```
 6. Execute the desired Python script:
 ```shell
-    rosrun  script_name.py
+    rosrun <package name> script_name.py
 ```
 
 # Acknowledgments
