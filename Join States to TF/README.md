@@ -4,7 +4,7 @@ This Python script is designed to calculate and publish transformations based on
 
 ## Prerequisites
 
-- ROS (Robot Operating System): Ensure that you have ROS installed and configured on your system to run this script.
+- ROS (Robot Operating System): Ensure that you have ROS Noetic installed and configured on your system to run this script.
 
 ## How to Use
 
