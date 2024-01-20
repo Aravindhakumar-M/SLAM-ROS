@@ -5,7 +5,7 @@ This Python script provides a simple teleoperation node for controlling a robot 
 ## Prerequisites
 
 - Python 3
-- ROS (Robot Operating System) environment
+- ROS Noetic environment
 - Python `rospy` package
 - Python `std_msgs` package
 
