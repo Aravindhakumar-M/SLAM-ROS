@@ -20,19 +20,19 @@ git clone https://github.com/Aravindhakumar-M/SLAM-ROS.git
 ```
 3. Navigate to the project directory:
 ```shell
-   cd <workspace name>
+cd <workspace name>
 ```
 4. Build the project:
 ```shell
-   catkin_make
+catkin_make
 ```
 5. Source the environment:
 ```shell
-    source devel/setup.bash
+source devel/setup.bash
 ```
 6. Execute the desired Python script:
 ```shell
-    rosrun <package name> script_name.py
+rosrun <package name> script_name.py
 ```
 
 # Acknowledgments
