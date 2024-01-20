@@ -36,3 +36,7 @@ It also publishes the planned path as a ROS Path message on the topic `/path`.
 
 ## Configuration
 The default start position is set to (0, 0) in the script. You can modify this to your desired start position in the start_callback function.
+
+# Acknowledgments
+Credit to the creators of ROS and its libraries.   
+Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
