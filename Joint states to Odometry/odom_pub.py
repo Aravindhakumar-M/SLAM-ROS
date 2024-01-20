@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# Import necessary libraries and modules
 import rospy
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import JointState
@@ -64,12 +63,9 @@ class JointStateToOdom:
         self.last_y = y
         self.last_time = rospy.Time.now()
 
-# Entry point of the script
 if __name__ == '__main__':
-    # Initialize the ROS node
     rospy.init_node('odom_pub')
     print('started odom publisher node')
     # Create an instance of the JointStateToOdom class
     joint_state_to_odom = JointStateToOdom()
-    # Enter the ROS event loop
     rospy.spin()
