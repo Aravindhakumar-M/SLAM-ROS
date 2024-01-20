@@ -4,7 +4,7 @@ This Python script is designed to control the velocities of a robot's wheels bas
 
 ## Prerequisites
 
-- ROS (Robot Operating System): Ensure that you have ROS installed and configured on your system to run this script.
+- ROS Noetic: Ensure that you have ROS Noetic installed and configured on your system to run this script.
 
 ## How to Use
 
