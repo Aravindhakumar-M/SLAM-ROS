@@ -4,7 +4,7 @@ This Python script is an example of a ROS (Robot Operating System) node that sub
 
 ## Prerequisites
 
-- ROS (Robot Operating System): This script is intended to be run in a ROS environment. Make sure you have ROS installed and configured.
+- ROS (Robot Operating System): This script is intended to be run in a ROS environment. Make sure you have ROS noetic installed and configured.
 
 ## How to Use
 
