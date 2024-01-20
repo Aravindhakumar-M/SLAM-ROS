@@ -6,7 +6,7 @@ This Python script is designed to control multiple motors using ROS (Robot Opera
 
 Before using this code, you should have the following installed and set up:
 
-1. ROS (Robot Operating System)
+1. ROS Noetic
 2. Python 3
 3. ROS packages to handle standard messages
 
