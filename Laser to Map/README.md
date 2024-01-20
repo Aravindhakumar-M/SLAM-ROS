@@ -6,8 +6,8 @@ This Python script is designed to create a map based on laser scan data and odom
 
 Before using this code, make sure you have the following prerequisites installed:
 
-- ROS (Robot Operating System)
-- Python 2.7 or 3.x
+- ROS Noetic
+- Python 3.x
 - NumPy library
 - ROS packages for LaserScan, Odometry, and other relevant topics
 
