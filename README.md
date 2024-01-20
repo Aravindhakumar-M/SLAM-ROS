@@ -16,7 +16,7 @@ A comprehensive repository based on ROS Noetic, featuring custom-written nodes f
 1. Navigate into the ros package.
 2. Download the repository:
 ```shell
-   git clone https://github.com/Aravindhakumar-M/SLAM-ROS.git
+git clone https://github.com/Aravindhakumar-M/SLAM-ROS.git
 ```
 3. Navigate to the project directory:
 ```shell
