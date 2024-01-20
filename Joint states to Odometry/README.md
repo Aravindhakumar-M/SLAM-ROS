@@ -35,3 +35,7 @@ The script will start listening to the joint_states topic and publishing odometr
 - You can customize the wheel_base variable in the script to match your robot's specifications. The wheel_base is the distance between the wheels of the robot.
 
 - You can modify the topic names and frame IDs to match your robot's configuration.
+
+# Acknowledgments
+Credit to the creators of ROS and its libraries.   
+Extending gratitude to Anya Robotics Pvt Ltd for their valuable contributions and support.
