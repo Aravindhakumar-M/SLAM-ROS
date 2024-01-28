@@ -14,13 +14,16 @@ A comprehensive repository based on ROS Noetic, featuring custom-written nodes f
 
 ## Usage:
 1. Navigate into the ros package.
+```shell
+cd <workspace name>/<package name>
+```
 2. Download the repository:
 ```shell
 git clone https://github.com/Aravindhakumar-M/SLAM-ROS.git
 ```
-3. Navigate to the project directory:
+3. Navigate to the workspace directory:
 ```shell
-cd <workspace name>
+cd ..
 ```
 4. Build the project:
 ```shell
@@ -30,9 +33,13 @@ catkin_make
 ```shell
 source devel/setup.bash
 ```
-6. Execute the desired Python script:
+6. Give executable perimissions:
 ```shell
-rosrun <package name> script_name.py
+sudo chmod +x <file_path>
+```
+7. Execute the desired Python script:
+```shell
+rosrun <package name> <script_name>
 ```
 
 # Acknowledgments
